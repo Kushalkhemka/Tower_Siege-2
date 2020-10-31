@@ -86,6 +86,7 @@ function draw() {
 
   //To assign brown background color
   background(48,6,6); 
+  //background(255);
 
   Engine.update(engine);
   
