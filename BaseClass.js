@@ -6,22 +6,22 @@ class BaseClass
             'friction':1.0,
             'density':1.0
         }
-        this.boxObject = Bodies.rectangle(x, y, width, height, options);
+        this.body = Bodies.rectangle(x, y, width, height, options);
         this.width = width;
         this.height = height;
-        //this.image = loadImage("sprites.png");
-        World.add(world, this.boxObject);
+        //this.image = loadImage("block1.png");
+        World.add(world, this.body);
+        //this.Visibility=255;
       }
       display(){
         //var angle = this.boxObject.angle;
         //push();
         //translate(this.boxObject.position.x, this.boxObject.position.y);
         //rotate(angle);
-        push();
-        strokeWeight(1.5);
+      
+       // strokeWeight(1.5);
+       // rectMode(CENTER);
+       // rect(this.body.position.x,this.body.position.y, this.width, this.height);
         
-        rectMode(CENTER);
-        rect(this.boxObject.position.x,this.boxObject.position.y, this.width, this.height);
-        pop();
       }
 }
